@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  header{
+    background-image: url(../Assets/header.jpg);
+    height: 25rem;
+    border: 5px solid black;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+footer{
+    background-color: black;
+    height: 20rem;
+}
+ 
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  span{
+    display: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-image: url(../Assets/header.jpg);
+    color: black;
+    height: 400px;
+  }
+  
+  .h1 {
+    font-size: 600%;
+    text-align: center;
+    position: relative; top: 50%;
+    font-style: italic;
+  }
+
+  .numero_contacto {
+    background-color: black;
+    color: orange;
+    font-size: 30px;
+    font-style: oblique;
+    position: absolute; top: 350px;
+    border-radius: 10px;
+  }
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .content__navbar {
+    display: flex;
+    position: relative;
+    left: 185%;
+  }
+  
+  .sections {
+    color: black;
+    background-color: rgb(255, 166, 2, 1);
+    border-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 200%;
+    font-style: oblique;
+    position: relative; 
+    top: 5px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .content__navbar li {
+    margin: 0 15px;
+  }
+  
+  .content__navbar li a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card__header {
+    position: relative;
+  }
+  
+  .card__header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card h3 {
+    text-align: center;
+    font-size: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fec171;
+  }
+
+  .card p {
+    color: black;
+    text-align: center;
+    font-size: 150%;
+  }
+  
+  .card a {
+    font-size: 150%;
+    color: black;
+    background-color: #fec171 ;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    text-align: center;;
+    margin-top: 2vw;
+  }
+  
+
+  .menu {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .menu__title {
+    color: #fec171;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+  }
+  
+  .menu__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .texto_footer {
+    color: white;
+    font-size: 150%;
+    max-width: 60%;
+    position: relative;
+    top: 30%;
+    margin-left: 50px;
+  }
+    /* Aplicaciones media */
+   .media_footer {
+    display: inline;
+    position: relative;
+    left: 70%;
+    bottom: 20px;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .content__navbar {
+        display: flex;
+        position: relative;
+        left: 50%;
+      }
+
+      .h1 {
+        font-size: 400%;
+        text-align: right;
+        position: relative; top: 70%; right: 5%;
+        font-style: italic;
+      }
+
+      .numero_contacto {
+        background-color: black;
+        color: orange;
+        font-size: 20px;
+        font-style: oblique;
+        position: absolute; top: 350px;
+        border-radius: 10px;
+      }
+
+    .menu__grid {
+       grid-template-columns: repeat(2, 1fr);
+     } 
+
+    .container {
+        max-width: 768px;
+    }
+
+    .texto_footer {
+        color: white;
+        font-size: 100%;
+        max-width: 50%;
+        position: relative;
+        top: 30%;
+        margin-left: 10px;
+      }
+        /* Aplicaciones media */
+       .media_footer {
+        display: inline;
+        position: relative;
+        left: 40%;
+        bottom: 50px;
+      }
+
+   }
+
+   @media (max-width: 320px) {
+
+    span{
+        display: flex;
+        font-size: 40px;
+        flex-direction: row;
+      }
+
+    .content__navbar {
+        display: none;
+        position: relative;
+        left: 50%;
+      }
+
+      .h1 {
+        font-size: 300%;
+        text-align: right;
+        position: relative; top: 60%; right: 2%;
+        font-style: italic;
+      }
+
+      .numero_contacto {
+        background-color: black;
+        color: orange;
+        font-size: 20px;
+        font-style: oblique;
+        position: absolute; top: 350px; left: 20%;
+        border-radius: 10px;
+      }
+
+    .menu__grid {
+       grid-template-columns: repeat(1, 1fr);
+     } 
+
+    .container {
+        max-width: 320px;
+    }
+
+    .texto_footer {
+        color: white;
+        font-size: 100%;
+        max-width: 80%;
+        position: relative;
+        top: 10%;
+        margin-left: 20px;
+      }
+        /* Aplicaciones media */
+       .media_footer {
+        display: none;
+      }
+
+   }
