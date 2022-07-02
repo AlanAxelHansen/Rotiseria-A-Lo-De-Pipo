@@ -37,7 +37,7 @@ footer{
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
   }
   
@@ -105,6 +105,10 @@ footer{
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
+
+  .card:hover {
+    transform: scale(1.1); background-color: orange;
+  }
   
   .card__header {
     position: relative;
@@ -140,7 +144,6 @@ footer{
     text-align: center;;
     margin-top: 2vw;
   }
-  
 
   .menu {
     margin-top: 30px;
@@ -151,12 +154,14 @@ footer{
     color: #fec171;
     background-color: rgba(0, 0, 0, .8);
     text-align: center;
+    font-size: 250%;
+    margin: 3%;
   }
   
   .menu__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 50px;
   }
 
   .texto_footer {
