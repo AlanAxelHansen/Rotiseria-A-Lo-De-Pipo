@@ -1,3 +1,5 @@
+
+    /*Cosas Generales*/
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
     font-family: 'Inter', sans-serif;
   }
   
-  header{
+header{
     background-image: url(../Assets/header.jpg);
     height: 25rem;
     border: 5px solid black;
@@ -20,27 +22,36 @@ footer{
     height: 20rem;
 }
  
-  a {
+a {
     text-decoration: none;
-  }
+}
   
-  p {
+p {
     line-height: 1.5;
-  }
+}
   
-  ul {
+ul {
     list-style-type: none;
-  }
+}
   
-  span{
+span{
     display: none;
-  }
+}
   
+      /*Contenedores*/
   .container {
     max-width: 1300px;
     margin: 0 auto;
   }
+
+  .container__2 {
+    max-width: 1300px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
   
+        /*Cosas globales de Header*/
+
   .header {
     background-image: url(../Assets/header.jpg);
     color: black;
@@ -50,18 +61,20 @@ footer{
   .h1 {
     font-size: 600%;
     text-align: center;
-    position: relative; top: 50%;
+    position: relative; top: 12rem;
     font-style: italic;
   }
 
   .numero_contacto {
     background-color: black;
     color: orange;
-    font-size: 30px;
+    font-size: 200%;
     font-style: oblique;
-    position: absolute; top: 350px;
+    position: absolute; top: 21rem;
     border-radius: 10px;
   }
+
+        /*Cosas de Navbar*/
 
   .header__content {
     display: flex;
@@ -99,6 +112,10 @@ footer{
     font-weight: bold;
   }
   
+      /*Cosas de Body*/
+
+      /*Cajas Main de Cocina*/
+      
   .card {
     background-color: rgb(128, 128, 128, 0.5);
     padding: 20px;
@@ -145,6 +162,8 @@ footer{
     margin-top: 2vw;
   }
 
+    /*Encabezados Comidas y Cuenta*/
+
   .menu {
     margin-top: 30px;
     margin-bottom: 100px;
@@ -156,14 +175,127 @@ footer{
     text-align: center;
     font-size: 250%;
     margin: 3%;
+    border-radius: 10px;
   }
-  
+      /*Grid aplicado en Main*/
+
   .menu__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
   }
 
+    /*Cosas de Caja de Cuenta*/
+
+      /*Contenedor principal*/
+  .cuenta__caja {
+    width: 600px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 200%;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 0%;
+    left: 27%;
+    text-align: center;
+    color: #fec171;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    line-height: 10%;
+  }
+      /*Textos y cajas contenedoras*/
+
+  .cuenta__caja label, input{
+    font-size: 100%px;
+    color: black;
+    background-color: #fec171 ;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 3%;
+    flex-direction: column;
+    width: 100%;
+}
+    /* Boton de caja de cuenta*/
+
+  .cuenta__caja button{
+    font-size: 150%px;
+    color: black;
+    background-color: #fec171 ;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    line-height: 300%;
+    width: 70%;
+    margin-top: 7%;
+ }
+
+    /*Cosas sobre Main de Sobre Nosotros*/
+
+    /*Aplicaciones a caja contenedora de encabezado*/
+ .caja__texto {
+  color: #fec171;
+    background-color: rgba(0, 0, 0, .8);
+    width: 30%;
+    font-size: 200%;
+    position: relative;
+    text-align: center;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 10px;
+ }
+    /*Texto de encabezado*/
+
+ .caja__nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fec171;
+  max-width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+ }
+
+    /*Caja principal*/
+
+  .caja__pipo {
+    margin: 1%;
+  }
+
+  /* Texto de Caja informacion quienes somos*/
+.caja__pipo p {
+  max-width: 60%;
+  text-align: center;
+  display: block;
+  font-size: 140%;
+  position: relative;
+  left: 35%;
+  bottom: 23rem;
+}
+    /*Imagen de Sobre Nosotros*/
+
+.caja__pipo img {
+  position: relative;
+  top: 3rem;
+  width: 30%;
+  border-radius: 10px;
+
+}
+
+  /*Cosas Footer*/
+
+  /*Aplicaciones a texto*/
   .texto_footer {
     color: white;
     font-size: 150%;
@@ -181,6 +313,10 @@ footer{
   }
 
 
+
+
+
+/*
   @media (max-width: 768px) {
 
     .content__navbar {
@@ -221,7 +357,7 @@ footer{
         top: 30%;
         margin-left: 10px;
       }
-        /* Aplicaciones media */
+        /* Aplicaciones media *//*
        .media_footer {
         display: inline;
         position: relative;
@@ -277,9 +413,9 @@ footer{
         top: 10%;
         margin-left: 20px;
       }
-        /* Aplicaciones media */
+        /* Aplicaciones media *//*
        .media_footer {
         display: none;
       }
 
-   }
+   }*/

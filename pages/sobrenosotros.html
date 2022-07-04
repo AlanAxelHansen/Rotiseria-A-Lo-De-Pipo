@@ -14,27 +14,32 @@
 </head>
 
 <body>
-    <header>
-        <!--Navegacion-->
-        <ul>
-            <a href="../index.html" class="secciones">Cocina</a>
-            <a href="./sobrenosotros.html" class="secciones">Sobre Nosotros</a>
-            <a href="./cuenta.html" class="secciones">Cuenta</a>
-        </ul>
-        <!--Titulo principal y numero-->
-        <h1 class="h1">A Lo De Pipo</h1>
-        <p class="numero_contacto">+54 2953 53463452</p>
-    </header>
+    <header class="header">
+        <div class="header__content container">
+           <nav>
+            <ul class="content__navbar sections" >
+              <li><a href="../index.html">Cocina</a></li>
+              <li><a href="./sobrenosotros.html">Nosotros</a></li>
+              <li><a href="./cuenta.html">Cuenta</a></li>
+            </ul>
+           </nav>
+           <p class="numero_contacto">+54 2953 53463452</p>
+        </div>
+        <h1 class="h1">
+           A Lo De Pipo
+        </h1>
+     </header>
 
     <main>
         <!--Titulo de sobre nosotros-->
-        <section class="encabezado_quienes_somos">
+        <div class="caja__texto">
             <h2>¿Quienes Somos?</h2>
-        </section>
+        </div>
         <!--Caja de informacion sobre nosotros-->
-        <article class="caja_pipo">
+    <section class="caja__nosotros container__2">
+        <article class="caja__pipo">
             <div>
-                <img src="../Assets/Pipo.jpg" alt="Pipo" width="400" height="400">
+                <img src="../Assets/Pipo.jpg" alt="Pipo">
                 <p>Fundada en 1986 por "Pipo" Gomez, ex soldado italiano quien cansado de guerras decidio venir a
                     nuestro pais persiguiendo su sueño de abrir una rotiseria y dando lugar a lo que somos hoy, el mejor
                     plantel para apaciguar tu apetito.<br></br> Ubicados en la esquina "Julio Argentino Roca" y "Manuel
@@ -44,6 +49,7 @@
                     calmar tu sed o una cena para que cierres tu dia de la mejor forma <br></br> ¡Te Esperamos!</p>
             </div>
         </article>
+    </section>
     </main>
 
     <footer>

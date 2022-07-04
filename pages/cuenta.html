@@ -13,23 +13,28 @@
 </head>
 
 <body>
-    <header>
-        <!--Navegacion-->
-        <ul>
-            <a href="../index.html" class="secciones">Cocina</a>
-            <a href="./sobrenosotros.html" class="secciones">Sobre Nosotros</a>
-            <a href="./cuenta.html" class="secciones">Cuenta</a>
-        </ul>
-        <!--Titulo principal y numero-->
-            <h1 class="h1">A Lo De Pipo</h1>
-            <p class="numero_contacto">+54 2953 53463452</p>
-    </header>
+    <header class="header">
+        <div class="header__content container">
+           <nav>
+            <ul class="content__navbar sections" >
+              <li><a href="../index.html">Cocina</a></li>
+              <li><a href="./sobrenosotros.html">Nosotros</a></li>
+              <li><a href="./cuenta.html">Cuenta</a></li>
+            </ul>
+           </nav>
+           <p class="numero_contacto">+54 2953 53463452</p>
+        </div>
+        <h1 class="h1">
+           A Lo De Pipo
+        </h1>
+     </header>
 
     <main>
+        <section class="container">
         <!--Titulo de cuenta-->
-        <h2 class="encabezado_cuenta">Tu Cuenta</h2>
+        <h2 class="menu__title">Tu Cuenta</h2>
         <!--Caja de ingreso de cuenta-->
-        <section class="caja_cuenta">
+        <section class="cuenta__caja">
             <form action="" method="post"></form>
                 <label for="nombre de cuenta">Nombre:</label>
                 <input type="text" id="nombre de cuenta" name="nombre de cuenta" placeholder="Ingrese su nombre..." />
@@ -39,6 +44,7 @@
                 <br />
                 <button type="submit">Enviar</button>
         </section>
+    </section>
     </main>
 
     <footer>
