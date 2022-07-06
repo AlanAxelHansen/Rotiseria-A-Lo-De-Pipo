@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Postres A Lo De Pipo</title>
-    <link rel="stylesheet" href="../Styles/style.css" />
+    
+    <!--Link Boostrap-->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <!--Link a mis estilos-->
+  <link rel="stylesheet" href="../Styles/style.css" />
+
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,62 +21,67 @@
 
 <body>
 
-    <header class="header">
-       <div class="header__content container">
-          <nav>
-           <ul class="content__navbar sections" >
-             <li><a href="../index.html">Cocina</a></li>
-             <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
-             <li><a href="./pages/cuenta.html">Cuenta</a></li>
-           </ul>
-          </nav>
-          <p class="numero_contacto">+54 2953 53463452</p>
-       </div>
-       <h1 class="h1">
-          A Lo De Pipo
-       </h1>
+   <header class="header">
+      <div class="header__content container">
+        <nav>
+          <ul class="content__navbar sections">
+            <li><a href="../index.html">Cocina</a></li>
+            <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
+            <li><a href="./pages/cuenta.html">Cuenta</a></li>
+          </ul>
+          <span>🌭</span>
+        </nav>
+        <p class="numero_contacto">+54 2953 53463452</p>
+      </div>
+      <h1 class="h1">A Lo De Pipo</h1>
+    </div>
     </header>
- 
-       <main>
-          <section class="menu container">
-            <h2 class="menu__title">¡Riquisimos!</h2>
-          <div class="menu__grid">
- 
-              <article class="card">
-                <div class="card__header">
-                  <img src="../Assets/Dansk_æblekage.jpg" alt="aeblekage" width="300" height="300"/>
-                </div>
-                <h3 class="card__title">aeblekage</h3>
-                <p class="card__description">Autentico Danés</p>
-              </article>
-    
-              <article class="card">
-                <div class="card__header">
-                  <img src="../Assets/chocotorta.jpg" alt="chocotorta" width="300" height="300"/>
-                </div>
-                <h3 class="card__title">Cocotorta</h3>
-                <p class="card__description">Bien Argentina</p>
-              </article>
-    
-              <article class="card">
-                <div class="card__header">
-                  <img src="../Assets/tiramisu.jpg" alt="tiramisu" width="300" height="300"/>
-                </div>
-                <h3 class="card__title">Tiramisú</h3>
-                <p class="card__description">Receta original Italiana</p>
-              </article>
- 
-             <article class="card">
-                <div class="card__header">
-               <img src="../Assets/torta.jpg" alt="tortas" width="300" height="300"/>
-                </div>
-                <h3 class="card__title">Tortas</h3>
-                <p class="card__description">La que quieras</p>
-             </article>
-          </div>
-             
-          </section>
-        </main>
+  
+    <main>
+      <section class="menu container">
+        <h2 class="menu__title">¡Termina con broche de oro!</h2>
+        <div class="menu__grid">
+  
+          <article class="card" style="width: 18rem; height: 30rem;">
+            <img src="../Assets/chocotorta.jpg" class="card-img-top" alt="carta chocotorta">
+            <div class="card-body">
+              <h5 class="card-title">¡Chocotorta!</h5>
+              <p class="card-text">¡El punto justo de humedad y frescor!</p>
+              <a href="#" class="btn btn-primary">¡Agregar!</a>
+            </div>
+          </article>
+  
+          <article class="card" style="width: 18rem; height: 30rem;">
+            <img src="../Assets/Dansk_æblekage.jpg" class="card-img-top" alt="carta aeblake">
+            <div class="card-body">
+              <h5 class="card-title">¡Aeblake!</h5>
+              <p class="card-text">¡Receta original Danesa!</p>
+              <a href="#" class="btn btn-primary">¡Agregar!</a>
+            </div>
+          </article>
+  
+          <article class="card" style="width: 18rem; height: 30rem;">
+            <img src="../Assets/torta.jpg" class="card-img-top" alt="carta torta">
+            <div class="card-body">
+              <h5 class="card-title">¡Tortas!</h5>
+              <p class="card-text">¡De todo tipo bien dulces!</p>
+              <a href="#" class="btn btn-primary">¡Agregar!</a>
+            </div>
+          </article>
+  
+          <article class="card" style="width: 18rem; height: 30rem;">
+            <img src="../Assets/tiramisu.jpg" class="card-img-top" alt="carta tiramisu">
+            <div class="card-body">
+              <h5 class="card-title">¡Tiramisu!</h5>
+              <p class="card-text">¡Fresquito y con la crema justa!</p>
+              <a href="#" class="btn btn-primary">¡Agregar!</a>
+            </div>
+          </article>
+  
+        </div>
+  
+      </section>
+    </main>
  
     <footer>
        <!--Texto de footer-->
